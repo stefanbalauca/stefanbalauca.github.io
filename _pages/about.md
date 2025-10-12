@@ -26,6 +26,11 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+Hi! I'm a first-year Computer Science PhD student at the Alexandru Ioan Cuza University of Iași, Romania.  
+My research interests lie at the intersection of **Machine Learning (ML)** and **Quantum Computing (QC)**, with my thesis focusing on **Robust Quantum Machine Learning (QML)**.  
+
+I hold Bachelor's degrees in both **Physics** and **Computer Science**, as well as a **Master's degree in Computer Science**.  
+Along the way, I’ve participated in a variety of **research projects and collaborations** that have helped shape my passion for combining theoretical insights with practical experimentation.
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
