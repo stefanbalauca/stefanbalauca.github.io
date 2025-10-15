@@ -7,3 +7,27 @@
 
 "Vision":
   color: "#009f36"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#f30b2c"
+
+"ICCV":
+  url: https://iccv2025.thecvf.com/
+  color: "#ff5c00"
+
+"TMLR":
+  url: https://tmlr.org/
+  color: "#00bcd4"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#ff9900"
+
+"ICCS":
+  url: https://www.iccs-meeting.org/
+  color: "#8a2be2"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#ff4500"
