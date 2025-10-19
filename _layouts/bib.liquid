@@ -330,8 +330,16 @@
 
     {% if entry.code %}
       <a href="{{ entry.code }}" title="Code">
-        <img src="{{ '/assets/icons/icon-github-white.svg' | relative_url }}" alt="Code" width="32" class="mx-1 mb-1">
+        <img src="{{ '/assets/icons/icon-github-new.svg' | relative_url }}" alt="Code" width="32" class="mx-1 mb-1">
         <div class="pub-icon-label">Code</div>
+      </a>
+    {% endif %}
+
+    {% if entry.poster %}
+      {% assign poster_url = entry.poster contains '://' | ternary: entry.poster, entry.poster | prepend: '/assets/pdf/' | relative_url %}
+      <a href="{{ poster_url }}" title="Poster">
+        <img src="{{ '/assets/icons/icon-poster.svg' | relative_url }}" alt="Poster" width="32" class="mx-1 mb-1">
+        <div class="pub-icon-label">Poster</div>
       </a>
     {% endif %}
 
@@ -352,7 +360,7 @@
 
     {% if entry.website %}
       <a href="{{ entry.website }}" title="Website">
-        <img src="{{ '/assets/icons/icon-website.svg' | relative_url }}" alt="Website" width="32" class="mx-1 mb-1">
+        <img src="{{ '/assets/icons/website.svg' | relative_url }}" alt="Website" width="32" class="mx-1 mb-1">
         <div class="pub-icon-label">Website</div>
       </a>
     {% endif %}
