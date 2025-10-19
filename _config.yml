@@ -353,7 +353,9 @@ imagemagick:
     - 1400
   input_directories:
     - assets/img/
+    - assets/icons/
   input_formats:
+    - ".svg"
     - ".jpg"
     - ".jpeg"
     - ".png"

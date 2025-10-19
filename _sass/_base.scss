@@ -877,6 +877,52 @@ footer.sticky-bottom {
   }
 }
 
+/* Publication icons column */
+.pub-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.pub-icon {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pub-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px; /* adjust this for number per row */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.pub-icon-item img {
+  width: 36px;
+  height: 36px;
+  opacity: 0.9;
+}
+
+.pub-icon-label {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  color: var(--text-muted-color);
+}
+
+.pub-icon-item:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .pub-icon-item {
+    width: 64px;
+  }
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
