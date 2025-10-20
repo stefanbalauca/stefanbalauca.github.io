@@ -15,6 +15,7 @@ module ExternalPosts
           puts "Fetching external posts from #{src['name']}:"
           if src['rss_url']
             fetch_from_rss(site, src)
+            # nil
           elsif src['posts']
             fetch_from_urls(site, src)
           end
@@ -22,12 +23,12 @@ module ExternalPosts
       end
     end
 
-    def fetch_from_rss(site, src)
-      xml = HTTParty.get(src['rss_url']).body
-      return if xml.nil?
-      feed = Feedjira.parse(xml)
-      process_entries(site, src, feed.entries)
-    end
+    # def fetch_from_rss(site, src)
+    #   xml = HTTParty.get(src['rss_url']).body
+    #   return if xml.nil?
+    #   feed = Feedjira.parse(xml)
+    #   process_entries(site, src, feed.entries)
+    # end
 
     def process_entries(site, src, entries)
       entries.each do |e|
