@@ -8,26 +8,27 @@
 "Vision":
   color: "#009f36"
 
-"NeurIPS":
+NeurIPS:
   url: https://neurips.cc/
-  color: "#f30b2c"
+  color: "#6a0dad"
 
-"ICCV":
+ICCV:
   url: https://iccv2025.thecvf.com/
   color: "#ff5c00"
 
-"TMLR":
+TMLR:
   url: https://tmlr.org/
   color: "#00bcd4"
 
-"ICML":
+ICML:
   url: https://icml.cc/
-  color: "#ff9900"
+  color: "#003B5C"  # Deep blue, official ICML color
 
-"ICCS":
+ICLR:
+  url: https://iclr.cc/
+  color: "#58C9ED"  # Light blue, official ICLR color
+
+ICCS:
   url: https://www.iccs-meeting.org/
   color: "#8a2be2"
 
-"ICLR":
-  url: https://iclr.cc/
-  color: "#ff4500"

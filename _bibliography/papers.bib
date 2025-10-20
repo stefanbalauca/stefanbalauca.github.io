@@ -1,57 +1,59 @@
 ---
 ---
 
-@misc{balauca2024gls,
+@article{dekany2025mixat,
+      title={MixAT: Combining Continuous and Discrete Adversarial Training for LLMs}, 
+      author={Csaba Dékány and Stefan Balauca and Robin Staab and Dimitar I. Dimitrov and Martin Vechev},
+      abbr={NeurIPS},
+      year={2025},
+      journal={Advances in Neural Information Processing Systems},
+      url={https://arxiv.org/abs/2505.16947}, 
+      pdf={https://arxiv.org/abs/2505.16947}, 
+      code={https://github.com/insait-institute/MixAT}, 
+      abstract={Despite recent efforts in Large Language Models (LLMs) safety and alignment, current adversarial attacks on frontier LLMs are still able to force harmful generations consistently. Although adversarial training has been widely studied and shown to significantly improve the robustness of traditional machine learning models, its strengths and weaknesses in the context of LLMs are less understood. Specifically, while existing discrete adversarial attacks are effective at producing harmful content, training LLMs with concrete adversarial prompts is often computationally expensive, leading to reliance on continuous relaxations. As these relaxations do not correspond to discrete input tokens, such latent training methods often leave models vulnerable to a diverse set of discrete attacks. In this work, we aim to bridge this gap by introducing MixAT, a novel method that combines stronger discrete and faster continuous attacks during training. We rigorously evaluate MixAT across a wide spectrum of state-of-the-art attacks, proposing the At Least One Attack Success Rate (ALO-ASR) metric to capture the worst-case vulnerability of models. We show MixAT achieves substantially better robustness (ALO-ASR < 20%) compared to prior defenses (ALO-ASR > 50%), while maintaining a runtime comparable to methods based on continuous relaxations. We further analyze MixAT in realistic deployment settings, exploring how chat templates, quantization, low-rank adapters, and temperature affect both adversarial training and evaluation, revealing additional blind spots in current methodologies. Our results demonstrate that MixAT's discrete-continuous defense offers a principled and superior robustness-accuracy tradeoff with minimal computational overhead, highlighting its promise for building safer LLMs.},
+}
+
+@InProceedings{balauca2025museum,
+      title={Understanding Museum Exhibits using Vision-Language Reasoning}, 
+      author={Ada-Astrid Balauca and Sanjana Garai and Stefan Balauca and Rasesh Udayakumar Shetty and Naitik Agrawal and Dhwanil Subhashbhai Shah and Yuqian Fu and Xi Wang and Kristina Toutanova and Danda Pani Paudel and Luc Van Gool},
+      abbr={ICCV},
+      year={2025},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+      abstract={Museums serve as repositories of cultural heritage and historical artifacts from diverse epochs, civilizations, and regions, preserving well-documented collections that encapsulate vast knowledge, which, when systematically structured into large-scale datasets, can train specialized models. Visitors engage with exhibits through curiosity and questions, making expert domain-specific models essential for interactive query resolution and gaining historical insights. Understanding exhibits from images requires analyzing visual features and linking them to historical knowledge to derive meaningful correlations. We facilitate such reasoning by (a) collecting and curating a large-scale dataset of 65M images and 200M question-answer pairs for exhibits from all around the world; (b) training large vision-language models (VLMs) on the collected dataset; (c) benchmarking their ability on five visual question answering tasks, specifically designed to reflect real-world inquiries and challenges observed in museum settings. The complete dataset is labeled by museum experts, ensuring the quality and the practical significance of the labels. We train two VLMs from different categories: BLIP with vision-language aligned embeddings, but lacking the expressive power of large language models, and the LLaVA model, a powerful instruction-tuned LLM enriched with vision-language reasoning capabilities. Through extensive experiments, we find that while both model types effectively answer visually grounded questions, large vision-language models excel in queries requiring deeper historical context and reasoning. We further demonstrate the necessity of fine-tuning models on large-scale domain-specific datasets by showing that our fine-tuned models significantly outperform current SOTA VLMs in answering questions related to specific attributes, highlighting their limitations in handling complex, nuanced queries.},
+      url={https://arxiv.org/abs/2412.01370}, 
+      pdf={https://arxiv.org/abs/2412.01370}, 
+      video={https://youtu.be/upUqt-HRw58},
+      code={https://github.com/insait-institute/Museum-65},
+      poster={balauca2025museum.pdf},
+}
+
+@article{mao2025ctbench,
+  title={CTBENCH: A Library and Benchmark for Certified Training},
+  author={Mao, Yuhao and Stefan Balauca and Vechev, Martin},
+  journal={Forty-second International Conference on Machine Learning},
+  abbr={ICML},
+  year={2025},
+  url={https://arxiv.org/abs/2406.04848},
+  pdf={https://arxiv.org/abs/2406.04848},
+  poster={https://icml.cc/media/PosterPDFs/ICML%202025/46137.png?t=1750519574.7242868},
+  video={https://icml.cc/virtual/2025/poster/46137},
+  code={https://github.com/eth-sri/CTBench},
+  abstract={Training certifiably robust neural networks is an important but challenging task. While many algorithms for (deterministic) certified training have been proposed, they are often evaluated on different training schedules, certification methods, and systematically under-tuned hyperparameters, making it difficult to compare their performance. To address this challenge, we introduce CTBench, a unified library and a high-quality benchmark for certified training that evaluates all algorithms under fair settings and systematically tuned hyperparameters. We show that (1) almost all algorithms in CTBench surpass the corresponding reported performance in literature in the magnitude of algorithmic improvements, thus establishing new state-of-the-art, and (2) the claimed advantage of recent algorithms drops significantly when we enhance the outdated baselines with a fair training schedule, a fair certification method and well-tuned hyperparameters. Based on CTBench, we provide new insights into the current state of certified training, including (1) certified models have less fragmented loss surface, (2) certified models share many mistakes, (3) certified models have more sparse activations, (4) reducing regularization cleverly is crucial for certified training especially for large radii and (5) certified training has the potential to improve out-of-distribution generalization. We are confident that CTBench will serve as a benchmark and testbed for future research in certified training.},
+}
+
+@article{balauca2025gaussian,
       title={Gaussian Loss Smoothing Enables Certified Training with Tight Convex Relaxations}, 
       author={Stefan Balauca and Mark Niklas Müller and Yuhao Mao and Maximilian Baader and Marc Fischer and Martin Vechev},
       abbr={TMLR},
-      year={2024},
-      eprint={2403.07095},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
+      year={2025},
+      journal={Transactions on Machine Learning Research},
+      issn={2835-8856},
       url={https://arxiv.org/abs/2403.07095}, 
       pdf={https://arxiv.org/abs/2403.07095}, 
       code={https://github.com/stefanrzv2000/GLS-Cert-Training}, 
       video={https://youtu.be/BMBvFMU1ZeM},
       slides={https://docs.google.com/presentation/d/1X0bZpPvce8_TRg2zuc5wcgTrNfhZjrEosF7d6ClrO5w/edit?usp=drivesdk},
-      poster={https://drive.google.com/file/d/1REXkC3v6qzXdGgu7UZFBXrl_aoS1o3Td/view?usp=drivesdk},
-      website={https://youtu.be/BMBvFMU1ZeM},
       abstract={Training neural networks with high certified accuracy against adversarial examples remains an open challenge despite significant efforts. While certification methods can effectively leverage tight convex relaxations for bound computation, in training, these methods, perhaps surprisingly, can perform worse than looser relaxations. Prior work hypothesized that this phenomenon is caused by the discontinuity, non-smoothness, and perturbation sensitivity of the loss surface induced by tighter relaxations. In this work, we theoretically show that applying Gaussian Loss Smoothing (GLS) on the loss surface can alleviate these issues. We confirm this empirically by instantiating GLS with two variants: a zeroth-order optimization algorithm, called PGPE, which allows training with non-differentiable relaxations, and a first-order optimization algorithm, called RGS, which requires gradients of the relaxation but is much more efficient than PGPE. Extensive experiments show that when combined with tight relaxations, these methods surpass state-of-the-art methods when training on the same network architecture for many settings. Our results clearly demonstrate the promise of Gaussian Loss Smoothing for training certifiably robust neural networks and pave a path towards leveraging tighter relaxations for certified training.},
-}
-
-@misc{dekany2025mixat,
-      title={MixAT: Combining Continuous and Discrete Adversarial Training for LLMs}, 
-      author={Csaba Dékány and Stefan Balauca and Robin Staab and Dimitar I. Dimitrov and Martin Vechev},
-      abbr={NeurIPS},
-      year={2025},
-      eprint={2505.16947},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2505.16947}, 
-      pdf={https://arxiv.org/abs/2505.16947}, 
-      abstract={Despite recent efforts in Large Language Models (LLMs) safety and alignment, current adversarial attacks on frontier LLMs are still able to force harmful generations consistently. Although adversarial training has been widely studied and shown to significantly improve the robustness of traditional machine learning models, its strengths and weaknesses in the context of LLMs are less understood. Specifically, while existing discrete adversarial attacks are effective at producing harmful content, training LLMs with concrete adversarial prompts is often computationally expensive, leading to reliance on continuous relaxations. As these relaxations do not correspond to discrete input tokens, such latent training methods often leave models vulnerable to a diverse set of discrete attacks. In this work, we aim to bridge this gap by introducing MixAT, a novel method that combines stronger discrete and faster continuous attacks during training. We rigorously evaluate MixAT across a wide spectrum of state-of-the-art attacks, proposing the At Least One Attack Success Rate (ALO-ASR) metric to capture the worst-case vulnerability of models. We show MixAT achieves substantially better robustness (ALO-ASR < 20%) compared to prior defenses (ALO-ASR > 50%), while maintaining a runtime comparable to methods based on continuous relaxations. We further analyze MixAT in realistic deployment settings, exploring how chat templates, quantization, low-rank adapters, and temperature affect both adversarial training and evaluation, revealing additional blind spots in current methodologies. Our results demonstrate that MixAT's discrete-continuous defense offers a principled and superior robustness-accuracy tradeoff with minimal computational overhead, highlighting its promise for building safer LLMs.},
-}
-
-@misc{balauca2025museum,
-      title={Understanding Museum Exhibits using Vision-Language Reasoning}, 
-      author={Ada-Astrid Balauca and Sanjana Garai and Stefan Balauca and Rasesh Udayakumar Shetty and Naitik Agrawal and Dhwanil Subhashbhai Shah and Yuqian Fu and Xi Wang and Kristina Toutanova and Danda Pani Paudel and Luc Van Gool},
-      abbr={ICCV},
-      year={2025},
-      eprint={2412.01370},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      abstract={Museums serve as repositories of cultural heritage and historical artifacts from diverse epochs, civilizations, and regions, preserving well-documented collections that encapsulate vast knowledge, which, when systematically structured into large-scale datasets, can train specialized models. Visitors engage with exhibits through curiosity and questions, making expert domain-specific models essential for interactive query resolution and gaining historical insights. Understanding exhibits from images requires analyzing visual features and linking them to historical knowledge to derive meaningful correlations. We facilitate such reasoning by (a) collecting and curating a large-scale dataset of 65M images and 200M question-answer pairs for exhibits from all around the world; (b) training large vision-language models (VLMs) on the collected dataset; (c) benchmarking their ability on five visual question answering tasks, specifically designed to reflect real-world inquiries and challenges observed in museum settings. The complete dataset is labeled by museum experts, ensuring the quality and the practical significance of the labels. We train two VLMs from different categories: BLIP with vision-language aligned embeddings, but lacking the expressive power of large language models, and the LLaVA model, a powerful instruction-tuned LLM enriched with vision-language reasoning capabilities. Through extensive experiments, we find that while both model types effectively answer visually grounded questions, large vision-language models excel in queries requiring deeper historical context and reasoning. We further demonstrate the necessity of fine-tuning models on large-scale domain-specific datasets by showing that our fine-tuned models significantly outperform current SOTA VLMs in answering questions related to specific attributes, highlighting their limitations in handling complex, nuanced queries.},
-      url={https://arxiv.org/abs/2412.01370}, 
-}
-
-@article{mao2024ctbench,
-  title={CTBENCH: A Library and Benchmark for Certified Training},
-  author={Mao, Yuhao and Stefan Balauca and Vechev, Martin},
-  journal={arXiv preprint arXiv:2406.04848},
-  abbr={ICML},
-  year={2024},
-  url={https://arxiv.org/abs/2406.04848},
-  abstract={Training certifiably robust neural networks is an important but challenging task. While many algorithms for (deterministic) certified training have been proposed, they are often evaluated on different training schedules, certification methods, and systematically under-tuned hyperparameters, making it difficult to compare their performance. To address this challenge, we introduce CTBench, a unified library and a high-quality benchmark for certified training that evaluates all algorithms under fair settings and systematically tuned hyperparameters. We show that (1) almost all algorithms in CTBench surpass the corresponding reported performance in literature in the magnitude of algorithmic improvements, thus establishing new state-of-the-art, and (2) the claimed advantage of recent algorithms drops significantly when we enhance the outdated baselines with a fair training schedule, a fair certification method and well-tuned hyperparameters. Based on CTBench, we provide new insights into the current state of certified training, including (1) certified models have less fragmented loss surface, (2) certified models share many mistakes, (3) certified models have more sparse activations, (4) reducing regularization cleverly is crucial for certified training especially for large radii and (5) certified training has the potential to improve out-of-distribution generalization. We are confident that CTBench will serve as a benchmark and testbed for future research in certified training.},
 }
 
 @InProceedings{balauca2022efficient,
@@ -64,118 +66,6 @@ publisher="Springer International Publishing",
 pages="179--194",
 abstract="Multi Controlled Gates, with Multi Controlled Toffoli as primary example are a building block for a lot of complex quantum algorithms in the domains of discrete arithmetic, cryptography, machine learning, and image processing. However, these gates cannot be physically implemented in quantum hardware and therefore they need to be decomposed into many smaller elementary gates. In this work we analyse previously proposed circuit constructions for MCT gates and describe 6 new methods for generating MCT circuits with efficient costs, less restrictions, and improved applicability.",
 isbn="978-3-031-08760-8",
-url="https://doi.org/10.1007/978-3-031-08760-8_16"
-}
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+url="https://doi.org/10.1007/978-3-031-08760-8_16",
+pdf={https://www.iccs-meeting.org/archive/iccs2022/papers/133530169.pdf},
 }
