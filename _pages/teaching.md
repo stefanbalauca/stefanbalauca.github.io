@@ -2,11 +2,26 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Find my timetable <a href="https://edu.info.uaic.ro/orar/participanti/orar_balaucaSR.html">here</a>.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+### Quantum Computing -- 2nd year BSc students
 
-Organize your courses by years, topics, or universities, however you like!
+For resources and information regarding the course and labs, see <a href='https://edu.info.uaic.ro/quantum-computing/'>the course page</a>.
+
+### Machine Learning -- 3rd year BSc students
+
+For announcements and resources regarding the course, go to <a href='https://piazza.com/info.uaic.ro/fall2025/ml2025f/resources'>Piazza</a>.
+
+For resources and information regarding the seminar, go to <a href='https://sites.google.com/view/seminarml-e1e2'>the seminar page</a>.
+
+### Thesis Supervision
+
+If you want me to (co-)supervise your BSc or MSc Thesis, or if you are just interested in working on a research project with me, text me on discord so we can have a chat about your interests.
+
+I am interested in working with students on projects regarding:
+* Machine Learning -- ML applications, ML safety, LLMs training and understanding 
+* Quantum Computing -- Quantum Optimization Problems, Quantum ML
+* Any topic that is interesting for you, and relevant for my experience.
