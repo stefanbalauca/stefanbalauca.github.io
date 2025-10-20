@@ -2,10 +2,12 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Find my timetable <a href="https://edu.info.uaic.ro/orar/participanti/orar_balaucaSR.html">here</a>.
+description: 
 nav: true
 nav_order: 6
 ---
+
+Find my timetable <a href="https://edu.info.uaic.ro/orar/participanti/orar_balaucaSR.html">here</a>.
 
 ### ⚛️ Quantum Computing -- 2nd year BSc students
 
