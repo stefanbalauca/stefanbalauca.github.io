@@ -1,15 +1,28 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
+title: Teaching
+description:
 nav: true
 nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+Find my timetable <a href="https://edu.info.uaic.ro/orar/participanti/orar_balaucaSR.html">here</a>.
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+### ⚛️ Quantum Computing -- 2nd year BSc students
 
-{% include courses.liquid %}
+For resources and information regarding the course and labs, see <a href='https://edu.info.uaic.ro/quantum-computing/'>the course page</a>.
+
+### 🤖 Machine Learning -- 3rd year BSc students
+
+For resources and information regarding the seminar, go to <a href='https://sites.google.com/view/seminarml-e1e2'>the seminar page</a>.
+
+### 🎓 Thesis Supervision
+
+If you would like me to (co-)supervise your BSc or MSc thesis, or you are interested in a research project, contact me by email or Discord so we can discuss your interests.
+
+I am interested in working with students on projects regarding:
+
+- Machine Learning — ML applications, AI safety, and training and understanding LLMs
+- Quantum Computing — quantum optimization, quantum machine learning, and hybrid quantum-classical models
+- Other topics that align with my research experience

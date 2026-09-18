@@ -7,3 +7,38 @@
 
 "Vision":
   color: "#009f36"
+
+NeurIPS:
+  url: https://neurips.cc/
+  color: "#6a0dad"
+
+ICCV:
+  url: https://iccv2025.thecvf.com/
+  color: "#ff5c00"
+
+TMLR:
+  url: https://tmlr.org/
+  color: "#00bcd4"
+
+ICML:
+  url: https://icml.cc/
+  color: "#003B5C" # Deep blue, official ICML color
+
+ICLR:
+  url: https://iclr.cc/
+  color: "#58C9ED" # Light blue, official ICLR color
+
+ICCS:
+  url: https://www.iccs-meeting.org/
+  color: "#8a2be2"
+
+KES:
+  url: https://kesinternational.org/
+  color: "#00695c"
+
+arXiv:
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+CYSC:
+  color: "#795548"
