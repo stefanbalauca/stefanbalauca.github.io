@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "",
+          description: "Education, research experience, publications, projects, and awards.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -376,16 +376,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-ctbench-a-library-and-benchmark-for-certified-training-was-published-at-icml-2025",
+          title: 'CTBench: A Library and Benchmark for Certified Training was published at ICML 2025....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-started-my-phd-in-computer-science-at-alexandru-ioan-cuza-university-focusing-on-robust-quantum-machine-learning",
+          title: 'I started my PhD in Computer Science at Alexandru Ioan Cuza University, focusing...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-paper-practical-hybrid-quantum-language-models-with-observable-readout-on-real-hardware-is-now-available-on-arxiv",
+          title: 'Our paper Practical Hybrid Quantum Language Models with Observable Readout on Real Hardware...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
