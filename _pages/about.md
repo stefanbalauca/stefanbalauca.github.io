@@ -11,8 +11,9 @@ profile:
   more_info: >
     <p>CS PhD @ <a href='https://info.uaic.ro/'>FII, UAIC</a></p>
     <p>Researcher @ <a href='https://www.freeya-mind-campus.ro/'>FreeYa Mind</a></p>
+    <p>Incoming Assistant Lecturer @ <a href='https://www.uaic.ro/'>UAIC</a></p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -25,8 +26,8 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Hi! I'm a first-year Computer Science PhD student at the Alexandru Ioan Cuza University of Iași, Romania. My research lies at the intersection of **Machine Learning (ML)** and **Quantum Computing (QC)**, with a focus on **Robust Quantum Machine Learning (QML)**. I am particularly fascinated by the challenge of developing quantum models that are not only powerful but also resilient to noise and errors — a crucial step toward practical applications of quantum computing. My goal is to explore methods that combine theoretical insights with scalable, real-world solutions in the rapidly evolving field of quantum-enhanced machine learning.
+Hi! I'm a Computer Science PhD student at Alexandru Ioan Cuza University of Iași, Romania, where I study **robust quantum machine learning**. I am also a researcher at **FreeYaMind Campus**, working on near-term applications of quantum computing and machine learning. From October 2026, I will join Alexandru Ioan Cuza University as an Assistant Lecturer in Quantum Computing, Machine Learning, and Numerical Calculus.
 
-I hold Bachelor's degrees in both **Physics** and **Computer Science**, as well as a **Master's degree in Computer Science**. During my studies, I gained a strong foundation in theoretical modeling, algorithms, and statistical analysis, which I now apply to problems at the frontier of classical and quantum computing. This interdisciplinary background allows me to approach research questions from multiple perspectives, blending rigorous mathematical reasoning with computational innovation.
+My research spans hybrid quantum-classical models, quantum natural language processing, and the robustness and safety of machine-learning systems. Recent work includes training quantum language models on real quantum hardware, adversarial training for large language models, and certified training of neural networks.
 
-Along the way, I have contributed to a variety of **research projects and collaborations**, spanning both classical and quantum machine learning. These experiences helped me develop hands-on skills in experimental design, computational modeling, and problem-solving in diverse research environments. I enjoy tackling challenging problems and collaborating with researchers from different backgrounds to bridge the gap between theory and practical implementation, and I am excited to continue exploring the potential of robust quantum machine learning throughout my PhD.
+I hold Bachelor's degrees in **Computer Science** and **Technological Physics**, as well as a Research Master's degree in **Advanced Studies in Computer Science**. This interdisciplinary background lets me combine theoretical modelling, algorithms, and experimental work across classical and quantum computing. I enjoy collaborating across disciplines and working with students on machine learning, AI safety, quantum optimization, and quantum machine learning.

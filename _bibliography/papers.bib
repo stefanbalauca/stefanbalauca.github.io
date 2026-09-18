@@ -1,6 +1,29 @@
 ---
 ---
 
+@InProceedings{panca2026skin,
+      title={Experimental Comparison of a Classical CNN and a Hybrid Quantum-Classical Model for Dermoscopic Skin Lesion Classification},
+      author={Panca, A.-G. and Ciorătanu, M. and Balauca, Stefan and Iftene, Adrian},
+      abbr={KES},
+      year={2026},
+      booktitle={30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems},
+      selected={false},
+}
+
+@article{balauca2025quantumlanguage,
+      title={Practical Hybrid Quantum Language Models with Observable Readout on Real Hardware},
+      author={Stefan Balauca and Ada-Astrid Balauca and Adrian Iftene},
+      abbr={arXiv},
+      year={2025},
+      journal={arXiv preprint arXiv:2512.12710},
+      url={https://arxiv.org/abs/2512.12710},
+      pdf={https://arxiv.org/pdf/2512.12710},
+      doi={10.48550/arXiv.2512.12710},
+      additional_info={Under submission at NeurIPS 2026},
+      selected={true},
+      abstract={Hybrid quantum-classical models represent a step toward using near-term quantum devices for sequential data processing. We present quantum recurrent and convolutional neural networks as hybrid quantum language models and evaluate generative language modelling end-to-end on real quantum hardware.},
+}
+
 @article{dekany2025mixat,
       title={MixAT: Combining Continuous and Discrete Adversarial Training for LLMs}, 
       author={Csaba Dékány and Stefan Balauca and Robin Staab and Dimitar I. Dimitrov and Martin Vechev},
@@ -10,6 +33,7 @@
       url={https://arxiv.org/abs/2505.16947}, 
       pdf={https://arxiv.org/abs/2505.16947}, 
       code={https://github.com/insait-institute/MixAT}, 
+      selected={true},
       abstract={Despite recent efforts in Large Language Models (LLMs) safety and alignment, current adversarial attacks on frontier LLMs are still able to force harmful generations consistently. Although adversarial training has been widely studied and shown to significantly improve the robustness of traditional machine learning models, its strengths and weaknesses in the context of LLMs are less understood. Specifically, while existing discrete adversarial attacks are effective at producing harmful content, training LLMs with concrete adversarial prompts is often computationally expensive, leading to reliance on continuous relaxations. As these relaxations do not correspond to discrete input tokens, such latent training methods often leave models vulnerable to a diverse set of discrete attacks. In this work, we aim to bridge this gap by introducing MixAT, a novel method that combines stronger discrete and faster continuous attacks during training. We rigorously evaluate MixAT across a wide spectrum of state-of-the-art attacks, proposing the At Least One Attack Success Rate (ALO-ASR) metric to capture the worst-case vulnerability of models. We show MixAT achieves substantially better robustness (ALO-ASR < 20%) compared to prior defenses (ALO-ASR > 50%), while maintaining a runtime comparable to methods based on continuous relaxations. We further analyze MixAT in realistic deployment settings, exploring how chat templates, quantization, low-rank adapters, and temperature affect both adversarial training and evaluation, revealing additional blind spots in current methodologies. Our results demonstrate that MixAT's discrete-continuous defense offers a principled and superior robustness-accuracy tradeoff with minimal computational overhead, highlighting its promise for building safer LLMs.},
 }
 
@@ -25,6 +49,8 @@
       video={https://youtu.be/upUqt-HRw58},
       code={https://github.com/insait-institute/Museum-65},
       poster={balauca2025museum.pdf},
+      doi={10.1109/ICCV51701.2025.00215},
+      selected={false},
 }
 
 @article{mao2025ctbench,
@@ -33,11 +59,16 @@
   journal={Forty-second International Conference on Machine Learning},
   abbr={ICML},
   year={2025},
-  url={https://arxiv.org/abs/2406.04848},
-  pdf={https://arxiv.org/abs/2406.04848},
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning},
+  publisher={PMLR},
+  volume={267},
+  pages={42984--43010},
+  url={https://proceedings.mlr.press/v267/mao25a.html},
+  pdf={https://raw.githubusercontent.com/mlresearch/v267/main/assets/mao25a/mao25a.pdf},
   poster={https://icml.cc/media/PosterPDFs/ICML%202025/46137.png?t=1750519574.7242868},
   video={https://icml.cc/virtual/2025/poster/46137},
   code={https://github.com/eth-sri/CTBench},
+  selected={true},
   abstract={Training certifiably robust neural networks is an important but challenging task. While many algorithms for (deterministic) certified training have been proposed, they are often evaluated on different training schedules, certification methods, and systematically under-tuned hyperparameters, making it difficult to compare their performance. To address this challenge, we introduce CTBench, a unified library and a high-quality benchmark for certified training that evaluates all algorithms under fair settings and systematically tuned hyperparameters. We show that (1) almost all algorithms in CTBench surpass the corresponding reported performance in literature in the magnitude of algorithmic improvements, thus establishing new state-of-the-art, and (2) the claimed advantage of recent algorithms drops significantly when we enhance the outdated baselines with a fair training schedule, a fair certification method and well-tuned hyperparameters. Based on CTBench, we provide new insights into the current state of certified training, including (1) certified models have less fragmented loss surface, (2) certified models share many mistakes, (3) certified models have more sparse activations, (4) reducing regularization cleverly is crucial for certified training especially for large radii and (5) certified training has the potential to improve out-of-distribution generalization. We are confident that CTBench will serve as a benchmark and testbed for future research in certified training.},
 }
 
@@ -53,6 +84,7 @@
       code={https://github.com/stefanrzv2000/GLS-Cert-Training}, 
       video={https://youtu.be/BMBvFMU1ZeM},
       slides={https://docs.google.com/presentation/d/1X0bZpPvce8_TRg2zuc5wcgTrNfhZjrEosF7d6ClrO5w/edit?usp=drivesdk},
+      selected={true},
       abstract={Training neural networks with high certified accuracy against adversarial examples remains an open challenge despite significant efforts. While certification methods can effectively leverage tight convex relaxations for bound computation, in training, these methods, perhaps surprisingly, can perform worse than looser relaxations. Prior work hypothesized that this phenomenon is caused by the discontinuity, non-smoothness, and perturbation sensitivity of the loss surface induced by tighter relaxations. In this work, we theoretically show that applying Gaussian Loss Smoothing (GLS) on the loss surface can alleviate these issues. We confirm this empirically by instantiating GLS with two variants: a zeroth-order optimization algorithm, called PGPE, which allows training with non-differentiable relaxations, and a first-order optimization algorithm, called RGS, which requires gradients of the relaxation but is much more efficient than PGPE. Extensive experiments show that when combined with tight relaxations, these methods surpass state-of-the-art methods when training on the same network architecture for many settings. Our results clearly demonstrate the promise of Gaussian Loss Smoothing for training certifiably robust neural networks and pave a path towards leveraging tighter relaxations for certified training.},
 }
 
@@ -68,4 +100,14 @@ abstract="Multi Controlled Gates, with Multi Controlled Toffoli as primary examp
 isbn="978-3-031-08760-8",
 url="https://doi.org/10.1007/978-3-031-08760-8_16",
 pdf={https://www.iccs-meeting.org/archive/iccs2022/papers/133530169.pdf},
+}
+
+@misc{balauca2019ceramic,
+      title={Finite Difference Method for Modeling the Dielectric Properties of Ceramic Composites},
+      author={Stefan Balauca and Liliana Pădurariu and Liliana Mitoseriu},
+      abbr={CYSC},
+      year={2019},
+      howpublished={Oral presentation at the 13th Conference for Young Scientists in Ceramics},
+      slides={https://docs.google.com/presentation/d/1ar2SsrwT4a7_rGUB7rXAeq9pXUVu2X-V/edit?usp=share_link},
+      selected={false},
 }

@@ -1,0 +1,516 @@
+%-------------------------
+% Resume in Latex
+% Author : Stefan-Razvan Balauca
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSmall}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Stefan-Razvan Balauca} \\ \vspace{1pt}
+    %\faicon{phone} \small +40 747 350 934 $|$ 
+    \small
+    \faicon{envelope} \href{mailto:stefann.balauca@gmail.com}{\underline{stefann.balauca@gmail.com}} $|$ 
+    \faicon{github} \href{https://github.com/stefanrzv2000}{\underline{stefanrzv2000}} $|$
+    \faicon{linkedin-square} \href{https://www.linkedin.com/in/stefan-balauca-43a69a252/}{\underline{stefan-balauca}} $|$
+    \faicon{graduation-cap} \href{https://scholar.google.com/citations?user=C-kUYncAAAAJ&hl=en&oi=ao}{\underline{stefan-balauca}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PhD in Computer Science -- Quantum Computing and Machine Learning}{Iasi, Romania}
+      {Alexandru Ioan Cuza University}{Oct. 2025 -- present}
+      \resumeItemListStart
+         \resumeItem{Research Topic: Towards Robust Quantum Machine Learning - \href{https://drive.google.com/file/d/16m703g77aiTLwUbUyto-ndqs7kgG5L61/view?usp=sharing}{\underline{Research Proposal}} }
+      \resumeItemListEnd
+    \resumeSubheading
+      {Research Master -- Advanced Studies in Computer Science}{Iasi, Romania}{Alexandru Ioan Cuza University}
+      {Oct. 2021 -- July 2023}
+      \resumeItemListStart
+        \resumeItem{Average Grade: 10 - $1^{st}$ place. Thesis Grade: 10}
+         \resumeItem{Thesis: Links between Batch Correction, Covariation and Gene Regulatory Networks - \href{https://drive.google.com/file/d/1BzjoTSXKUYOVdDC3eJaiBNf7gpcTsWTL/view?usp=sharing}{\underline{Thesis}} }
+        \resumeItem{Research Topics: Quantum Computing, Machine Learning, Deep Learning, NLP, Security}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{Iasi, Romania}{Alexandru Ioan Cuza University}
+      {Oct. 2018 -- July 2021}
+      \resumeItemListStart
+        \resumeItem{Average Grade: 9.97 - $1^{st}$ place. Thesis Grade: 10}
+         \resumeItem{Thesis: An analysis of Quantum Circuits for simulating Multi-Controlled Toffoli Gates - \href{https://drive.google.com/file/d/1p6OVt32taV5ck82k2D3_9zv4dX4lRJDI/view?usp=sharing}{\underline{Thesis}}, \href{https://drive.google.com/file/d/1DEUZwrW98wki1-3jgFVsGpCBbvJb0egk/view?usp=sharing}{\underline{Abstract}} }
+        \resumeItem{Main interests: Neural Networks, Machine Learning, Quantum Computing, Genetic Algorithms, Cryptography}
+        % Information Security, Computer Networks, Web Technologies, Object-Oriented Programming,
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Engineering in Technological Physics}{Iasi, Romania}{Alexandru Ioan Cuza University}
+      {Oct. 2018 -- July 2022}
+      \resumeItemListStart
+        \resumeItem{Average Grade: 10 - $1^{st}$ place. Thesis Grade: 10}
+        \resumeItem{Thesis: The Technology of Self-Organising Robots: Challenges and Applications - \href{https://drive.google.com/file/d/1kVGjyk2jG-dpeKHYZyFaBgVIT5xgHNoc/view?usp=sharing}{\underline{Thesis (Romanian)}} }
+        \resumeItem{Main interests: Quantum Mechanics, Statistical Physics, Physics of Plasma, Lasers, Nuclear Physics, Astrophysics, Electronics, Electrodynamics}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Mihai Eminescu National College}{Botosani, Romania}
+    %   {Mathematics and Computer Science}{Sep. 2014 -- June 2018}
+    %   \resumeItemListStart
+    %     \resumeItem{Baccalaureate Grades: Mathematics (10), Pyhisics (10),
+    %     Romanian Language and Literature (10)}
+    %   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Incoming Assistant Lecturer -- Quantum Computing, ML and Numerical Calculus}{Starting Oct. 2026}
+      {Alexandru Ioan Cuza University}{Iasi, Romania}
+      \resumeItemListStart
+        \resumeItem{Design and evaluate homework and projects; Explain lab exercises to BSc students; Supervise BSc and MSc theses}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Researcher -- Quantum Computing and Machine Learning}{Jan. 2025 - Present}
+      {FreeYaMind Campus}{Iasi, Romania}
+      \resumeItemListStart
+        \resumeItem{Research Topics: Near-term Applications of Quantum Computing and Machine Learning}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Researcher -- Secure and Reliable AI}{Sept. 2023 - Jan. 2025}
+      {INSAIT, Sofia University ``St. Kliment Ohridski''}{Sofia, Bulgaria}
+      \resumeItemListStart
+        \resumeItem{Research Topic: Certified Robustness of Neural Networks, Adviser: \href{https://www.sri.inf.ethz.ch/people/martin}{\underline{Prof. Martin Vechev}} (ETH Z\"urich)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Research Intern}{May 2023 -- Aug. 2023}
+      {STEM Cell Institute - University of Cambridge}{Cambridge, UK}
+      \resumeItemListStart
+        \resumeItem{Exploring Gene Expression covariation and designing algorithms for Gene Regulatory Network inference}
+        %\resumeItem{Developed a submodule that loads the pictures then applies the algorithm to get textures which will be sent to a renderer}
+        % \resumeItem{Sketched the algorithm in Python, ported it to C++ and optimised it to use graphical processing (CUDA)}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Teaching Assistant -- Quantum Computing, Numerical Calculus and ML}{Oct. 2021 -- July 2023}
+      {Alexandru Ioan Cuza University}{Iasi, Romania}
+      \resumeItemListStart
+        \resumeItem{Design and evaluate homework and projects; Explain exercises and problems to BSc students}
+        % \resumeItem{Evaluating students' homework, projects and exams}
+        %\resumeItem{Developed a submodule that loads the pictures then applies the algorithm to get textures which will be sent to a renderer}
+        % \resumeItem{Sketched the algorithm in Python, ported it to C++ and optimised it to use graphical processing (CUDA)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{July 2021 -- Oct. 2021}
+      {University of Maryland}{College Park, MD, USA}
+      \resumeItemListStart
+        \resumeItem{Characterizing, Quantifying and Remediating Label Noise in Malware Detection using Machine Learning}
+        %\resumeItem{Developed a submodule that loads the pictures then applies the algorithm to get textures which will be sent to a renderer}
+        % \resumeItem{Sketched the algorithm in Python, ported it to C++ and optimised it to use graphical processing (CUDA)}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Software Developer -- Mathematics Specialist Intern}{July 2020 -- Sep. 2020}
+      {Gemini CAD Systems}{Iasi, Romania}
+      \resumeItemListStart
+        \resumeItem{Developed a Photometric Stereo algorithm for processing multiple images of materials into generating texture maps (normal map and height map)}
+        %\resumeItem{Developed a submodule that loads the pictures then applies the algorithm to get textures which will be sent to a renderer}
+        \resumeItem{Sketched the algorithm in Python, ported it to C++ and optimised it to use graphical processing (CUDA)}
+      \resumeItemListEnd
+    
+    % \resumeSubheadingSmall
+    %   {\normalsize{Volunteer Teacher - Excellence Center, Botosani}}{\normalsize \normalfont Sep. 2018 -- present}
+    %   {}{}
+    %   \resumeItemListStart
+    %     \resumeItem{Helping 20+ Middle School and High School students prepare for the Regional and National Olympiads in Physics, resulting in medals and prizes at the National Olympiad}
+        
+    %   \resumeItemListEnd
+            
+
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Java, C/C++, $C^\#$, Assembly, SQL, JavaScript, HTML/CSS, MatLab, R} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Azure, VS Code, Visual Studio, IntelliJ, DataGrip, Unity} \\
+     %\textbf{Subjects of interest}{: Graph Algorithms, Cryptography, Quantum Mechanics, Quantum Computing, Electronics} \\
+     \textbf{Languages}{: Romanian (native), English (C1 - TOEFL iBT), French(High School level)} \\
+    }}
+ \end{itemize}
+%
+%-----------CONFERENCES-----------
+\section{Scientific Publications}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingSmall
+      {International Conferences and Journals}{}
+      \resumeItemListStart
+        \resumeItem{\textit{Experimental Comparison of a Classical CNN and a Hybrid Quantum-Classical Model for Dermoscopic Skin Lesion Classification} -
+        A.-G. Panca, M. Cioratanu, \textbf{S. Balauca}, A. Iftene -
+        30th International Conference on Knowledge-Based and Intelligent Information \& Engineering Systems
+        (\textbf{KES 2026}, Dublin, Ireland)}
+        
+        \resumeItem{\textit{Practical Hybrid Quantum Language Models with Observable Readout on Real Hardware} -
+        \textbf{S. Balauca}, A.-A. Balauca, A. Iftene
+        (\textbf{arXiv preprint, 2025} -- under submission at NeurIPS 2026;
+        \textbf{\href{https://arxiv.org/abs/2512.12710}{\underline{paper}}})}
+        
+        \resumeItem{\textit{Gaussian Loss Smoothing Enables Certified Training with Tight Convex Relaxations} -
+        \textbf{S. Balauca}, M.N. M\"uller, Y. Mao, M. Baader, M. Fischer, M. Vechev -
+        Transactions on Machine Learning Research
+        (\textbf{TMLR 2025};
+        \textbf{\href{https://arxiv.org/abs/2403.07095}{\underline{paper}}})}
+        
+        \resumeItem{\textit{CTBench: A Library and Benchmark for Certified Training} -
+        Y. Mao, \textbf{S. Balauca}, M. Vechev -
+        42nd International Conference on Machine Learning
+        (\textbf{ICML 2025}, Vancouver, Canada; \textbf{\href{https://proceedings.mlr.press/v267/mao25a.html}{\underline{paper}}})}
+        
+        \resumeItem{\textit{MixAT: Combining Continuous and Discrete Adversarial Training for LLMs} -
+        C. D\'ek\'any, \textbf{S. Balauca}, R. Staab, D.I. Dimitrov, M. Vechev -
+        39th Conference on Neural Information Processing Systems
+        (\textbf{NeurIPS 2025};
+        \textbf{\href{https://arxiv.org/abs/2505.16947}{\underline{paper}}})}
+        
+        \resumeItem{\textit{Understanding Museum Exhibits using Vision-Language Reasoning} -
+        A.-A. Balauca, S. Garai, \textbf{S. Balauca}, et al. -
+        IEEE/CVF International Conference on Computer Vision
+        (\textbf{ICCV 2025}, Hawaii, US; \textbf{\href{https://doi.org/10.1109/ICCV51701.2025.00215}{\underline{paper}}})}
+        
+        \resumeItem{\textit{Efficient Constructions for Simulating Multi Controlled Quantum Gates} -
+        \textbf{S. Balauca}, A. Arusoaie -
+        22nd International Conference on Computational Science
+        (\textbf{ICCS 2022}, London, UK;
+        \textbf{\href{https://doi.org/10.1007/978-3-031-08760-8_16}{\underline{paper}}},
+        oral, co-chair)}
+        % \resumeItem{\textit{Gaussian Loss Smoothing Enables Certified Training with Tight Convex Relaxations} - \textbf{S. Balauca}, M.N. M\"uller, Y. Mao, M. Baader, M. Vechev (\textbf{\href{https://arxiv.org/abs/2403.07095}{\underline{arXiv preprint}}, Accepted for publication in TMLR 07/2025})}
+        % \resumeItem{\textit{CTBench: A Library and Benchmark for Certified Training} - Y. Mao, \textbf{S. Balauca}, M. Vechev (\textbf{\href{https://arxiv.org/abs/2406.04848}{\underline{arXiv preprint}}, Accepted for publication at ICML 2025})}
+        % \resumeItem{\textit{Understanding the World's Museums through Vision-Language Reasoning} - A.A. Balauca, S. Garai, \textbf{S. Balauca}, et al.
+        % % R.U. Shetty, N. Agrawal, D.S. Shah, Y. Fu, Xi Wang, K. Toutanova, D.P. Paudel, L. Van Gool 
+        % (\textbf{\href{https://arxiv.org/abs/2412.01370}{\underline{arXiv preprint}}, Accepted for publication at ICCV 2025})}
+        % \resumeItem{\textit{MixAT: Combining Continuous and Discrete Adversarial Training for LLMs} - C. Dékány, \textbf{S. Balauca}, R. Staab, D.I. Dimitrov, M. Vechev (\textbf{\href{https://arxiv.org/abs/2505.16947}{\underline{arXiv preprint}}, under submission at NeurIPS 2025})}
+        % \resumeItem{\textit{Efficient Constructions for Simulating Multi Controlled Quantum Gates} - \textbf{S. Balauca}, A. Arusoaie - $22^{nd}$ International Conference on Computational Science, Jun 2022 - London, UK (\textbf{oral + \href{https://link.springer.com/chapter/10.1007/978-3-031-08760-8_16}{\underline{paper}}, co-chair})}
+        \resumeItem{\textit{Finite difference method for modeling the dielectric properties of ceramic composites} - \textbf{S. Balauca}, L. Padurariu, L. Mitoseriu - $13^{th}$ Conference for Young Scientist in Ceramics, (\textbf{CYSC 2019}, Novi-Sad, Serbia; \textbf{oral + \href{https://docs.google.com/presentation/d/1ar2SsrwT4a7_rGUB7rXAeq9pXUVu2X-V/edit?usp=share_link&ouid=101937940435378751045&rtpof=true&sd=true}{\underline{slides}}})}
+        
+      \resumeItemListEnd
+    
+    \resumeSubheadingSmall
+      {Other Conferences}{}
+      \resumeItemListStart
+        \resumeItem{\textit{Study of forced oscillations using the fazorial method} - \textbf{S. Balauca}, S. Popescu - $57^{th}$ National Physics and Modern Educational Technologies Conference, May 2019, Iasi, Romania (\textbf{oral + \href{https://docs.google.com/presentation/d/1cTc6HHv4P4_XNDRd6v5wrVd7pVUO6wSJ/edit?usp=sharing&ouid=101937940435378751045&rtpof=true&sd=true}{\underline{slides}}})}
+        % \resumeItem{\textit{Finite difference method for modeling the dielectric properties of ceramic composites} - \textbf{S. Balauca}, L. Padurariu, L. Mitoseriu - FARPHYS Conference, Oct. 2019, Iasi, Romania (\textbf{oral}) }
+        
+      \resumeItemListEnd
+    
+    % \resumeSubheadingSmall
+    %   {Research in progress}{}
+    %   \resumeItemListStart
+    %     \resumeItem{\textit{Study of Quantum Algorithms in Machine Learning} }
+        
+    %   \resumeItemListEnd
+
+    % \resumeSubheadingSmall
+    %   {International Courses}{}
+    %   \resumeItemListStart
+    %     \resumeItem{\textit{Cornell, Maryland, Max Planck Pre-doctoral Research School} - Max Plank Institute of Software Systems, Saarbrucken, Germany, Aug 2022}
+        
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Research Projects}
+    \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\href{https://github.com/IvanovCosmin/ProiectIP_B4}{\textbf{!FIIBolnav (eng. NOT BE Sick)}} $|$ \emph{Python, $C^\#$, Angular, MongoDB, Docker}}{Feb 2020 -- June 2020}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a full-stack web app providing medical service implementing a REST API with Angular as the frontend}
+    %         \resumeItem{Worked in a team of 6 to develop the diagnosis module}
+    %         \resumeItem{Developed a Python backend server with Neural Networks for cancer detection from images}
+    %       \resumeItemListEnd
+    
+    % \resumeProjectHeading
+    %     {\href{https://github.com/Akrielz/-TW---Project}{\textbf{STOL - Universal Storage Tool}} $|$ \emph{Node JS, MongoDB}}{Feb -- June 2020}
+    %     \resumeItemListStart
+    %       \resumeItem{Developed a Web Application for managing one's files by splitting and storing them into owner's cloud accounts (Google Drive, DropBox, OneDrive)}
+    %       \resumeItem{Implemented raw API calls in order to upload/download chunks of files stored in cloud}
+    %     \resumeItemListEnd
+    
+    %   \resumeProjectHeading
+    %       {\textbf{Electronic Book Store} $|$ \emph{C++ socket API, Qt, MySQL}}{Nov 2019 -- Jan 2020}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a client-server app for buying and reading electronic books}
+    %       \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Visual Word Sense Disambiguation - SemEval 2023}  $|$ \emph{pytorch, nltk, wordnet}}{Oct 2022 -- Feb 2023}
+        \resumeItemListStart
+            \resumeItem{Convolutional, recurrent and attention networks for identifying the best image describing an ambiguous word}
+        \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %     {\textbf{Quantum Computing Research Projects}  $|$ \emph{qiskit, IBMQ, quantum annealing}}{Oct 2021 -- present}
+    %     \resumeItemListStart
+    %         \resumeItem{Constructing optimal quantum circuits in qiskit by means of Dynamical Programming}
+    %         \resumeItem{Exploring Optimisation and Machine Learning quantum algorithms in quantum annealers}
+    %     \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %     {\textbf{Statistical Analysis of ML algorithms} $|$ \emph{scikit-learn, keras}}{Feb 2022 -- Jun 2022}
+    %     \resumeItemListStart
+    %         \resumeItem{Analysing the effects of data and outlier distributions on the learning landscape of classifiers}
+    %     \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{\href{ https://colab.research.google.com/drive/1_yDVONNKSRI_GoF7pYY1lVmAcwNZGF8n?usp=sharing}{Summarizing a story}}  $|$ \emph{nltk, SpaCy, Google Colab}}{Oct 2020 -- Jan 2021}
+        \resumeItemListStart
+            \resumeItem{Extracting the main characters from a story and correlating them with their explicit and implicit actions}
+            \resumeItem{Winner of the Amazon Learn and Earn competition}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{\href{ https://github.com/stefanrzv2000/gym}{Q-learning algorithm for gym's CarRacing environment}}  $|$ \emph{keras, tensorflow}}{Oct 2020 -- Jan 2021}
+        \resumeItemListStart
+            \resumeItem{Obtained scores of 850-900/1000, better than human performance}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{\href{https://cmmrs.mpi-sws.org/}{Participation at CMMRS Research Summer School}} $|$ \emph{MPI-SWS, Saarbrucken, DE}}{Aug 2022}
+        \resumeItemListStart
+            \resumeItem{Attended lectures on cutting-edge research topics in computer science, including theory of deep learning, large-scale machine learning, NLP, distributed systems, security and privacy}
+        \resumeItemListEnd
+      
+      % \resumeProjectHeading
+      %     {\textbf{Machine Learning and Artificial Intelligence Projects}}{Oct 2020 -- Jan 2021}
+      %     \resumeItemListStart
+      %       \resumeItem{\href{https://github.com/stefanrzv2000/gym}{Q-learning algorithm for gym's CarRacing environment} $|$ \emph{keras, tensorflow}}
+      %       \resumeItem{\href{https://colab.research.google.com/drive/1_yDVONNKSRI_GoF7pYY1lVmAcwNZGF8n?usp=sharing}{Résumé - summarising a story}  $|$ \emph{nltk, SpaCy, Google Colab}}
+      %     \resumeItemListEnd
+    
+      % \resumeProjectHeading
+      %     {\href{https://github.com/stefanrzv2000/IMR-Project}{\textbf{Dragons' Magic Island - VR Card Game}} $|$ \emph{Unity, $C^\#$, Google Mediapipe, Blender}}{Oct 2020 -- Jan 2021}
+      %     \resumeItemListStart
+      %       \resumeItem{Developped a VR Card Game using Mediapipe for Hand Tracking}
+      %       \resumeItem{Can be played on Android, or on PC with X-box controller}
+      %     \resumeItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{Other Projects and Homeworks from Faculty} $|$ \emph{C/C++, Java, Python}}{Oct 2018 -- present}
+    %       \resumeItemListStart
+    %         \resumeItem{Advanced Programming (Java), Cryptography, Neural Networks, Artificial Intelligence, Information Security}
+    %       \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------AWARDS-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingSmall
+      {International Awards - Mathematics}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Silver Medal} - $28^{th}$ International Mathematics Competition for University Students, 2021, on-line}
+        \resumeItem{\textbf{Gold Medal} - $13^{th}$ International Ariel Mathematical Olympiad, 2021, on-line}
+        \resumeItem{\textbf{Gold Medal} - $12^{th}$ International Ariel Mathematical Olympiad, 2020, on-line}
+        \resumeItem{\textbf{Gold Medal} - $14^{th}$ South-Eastern Europe Mathematical Olympiad for University Students, 2020, Thessaloniki,Gr}
+        \resumeItem{\textbf{Gold Medal} - $11^{th}$ International Ariel Mathematical Olympiad, 2019, Ariel, Israel}
+        \resumeItem{\textbf{Gold Medal - Team Contest} - $11^{th}$ Ariel Mathematical Olympiad, 2019, Ariel, Israel}
+        \resumeItem{\textbf{Silver Medal} - $13^{th}$ South-Eastern Europe Mathematical Olympiad for University Students, 2019, Devin,Bulgaria}
+        % \resumeItem{\textbf{Gold Medal} - $19^{th}$ Asiatic Physics Olympiad, 2018, Hanoi, Vietnam}
+        % \resumeItem{\textbf{Gold Medal} - $11^{th}$ International Earth Sciences Olympiad, 2017, Nice, France}
+        % \resumeItem{\textbf{Bronze Medal} - $15^{th}$ International Linguistics Olympiad, 2017, Dublin, Ireland}
+        % \resumeItem{\textbf{Mention - Team Contest} - $15^{th}$ International Linguistics Olympiad, 2017, Dublin, Ireland}
+        % \resumeItem{\textbf{Silver Medal} - $12^{th}$ International Junior Sciences Olympiad, 2015, Daegu, South Korea}
+        \resumeItem{\textbf{Silver Medal} - $19^{th}$ Balkan Mathematical Olympiad, 2015, Belgrade, Serbia}
+        % \resumeItem{\textbf{Silver Medal} - $11^{th}$ International Junior Sciences Olympiad, 2014, Mendoza, Argentina}
+        
+      \resumeItemListEnd
+
+    \resumeSubheadingSmall
+      {Artificial Intelligence and Programming}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{1$^{st}$ place worldwide} - $36^{th}$ Catalyst CloudFlight Coding Contest - AI, Nov 2022, online}
+        \resumeItem{\textbf{2$^{nd}$ place Iasi, 19$^{th}$ place worldwide} - $35^{th}$ Catalyst CloudFlight Coding Contest - AI, Nov 2021, online}
+        % \resumeItem{\textbf{2$^{nd}$ place Iasi, 42$^{nd}$ place worldwide} - $34^{th}$ Catalyst CloudFlight Coding Contest, Nov 2020, online}
+        % \resumeItem{\textbf{9$^{th}$ place Iasi, 158$^{th}$ place worldwide} - $33^{th}$ Catalyst CloudFlight Coding Contest, Apr 2020, online}
+        \resumeItem{\textbf{15$^{th}$ place Romania, 265$^{th}$ place worldwide} - Google HashCode Contest, Feb. 2020, online}
+        \resumeItem{\textbf{2$^{nd}$ place Iasi, 7$^{th}$ place Romania} - ACM ICPC Subregional Contest, December 2020, Iasi, Romania}
+        % \resumeItem{\textbf{5$^{th}$ place Iasi, 35$^{th}$ place Romania} - ACM ICPC Bucharest Subregional Contest, May 2019, Iasi, Romania}
+        % \resumeItem{\textbf{1$^{st}$ prize} - $18^{th}$ “Dragomir Hurmuzescu” National Physics Contest for University Students, 2019, TM, Romania}
+        % \resumeItem{\textbf{2$^{nd}$ prize} - $11^{th}$ “Traian Lalescu” National Mathematics Contest for University Students, 2019, CJ, Romania}
+        % \resumeItem{\textbf{2$^{nd}$ prize} - $57^{th}$ National Physics and Modern Educational Technologies Conference, May 2019, Iasi, Romania}
+        \resumeItem{\textbf{Best Score} - Amazon’s ”Learn \& Earn” Competition within ”Data Structures” discipline, Feb 2019}
+        \resumeItem{\textbf{Best Project} - Amazon’s ”Learn \& Earn” Competition within ”Artificial Intelligence” discipline, Jan 2021}
+        % \resumeItem{\textbf{8 Gold Medals and prizes (top 3)} - National Mathematics, Physics, Linguistics and Sciences Olympiads in High School (2014 - 2018)}
+        
+      \resumeItemListEnd
+
+
+    \resumeSubheadingSmall
+      {International Awards - Physics and Sciences}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Gold Medal} - $19^{th}$ Asiatic Physics Olympiad, 2018, Hanoi, Vietnam}
+        \resumeItem{\textbf{Gold Medal} - $11^{th}$ International Earth Sciences Olympiad, 2017, Nice, France}
+        \resumeItem{\textbf{Silver Medal} - $12^{th}$ International Junior Sciences Olympiad, 2015, Daegu, South Korea}
+        \resumeItem{\textbf{Silver Medal} - $11^{th}$ International Junior Sciences Olympiad, 2014, Mendoza, Argentina}
+        
+      \resumeItemListEnd
+
+    \resumeSubheadingSmall
+      {International Awards - Linguistics}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Bronze Medal} - $15^{th}$ International Linguistics Olympiad, 2017, Dublin, Ireland}
+        \resumeItem{\textbf{Mention - Team Contest} - $15^{th}$ International Linguistics Olympiad, 2017, Dublin, Ireland}
+      \resumeItemListEnd
+    
+    
+    \resumeSubheadingSmall
+      {Other Awards}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{8 Gold Medals and prizes (top 3)} - National Mathematics, Physics, Linguistics and Sciences Olympiads in High School (2014 - 2018)}
+        
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+
+
+% %
+% %-----------OTHER SKILLS-----------
+% \section{Other Skills}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheadingSmall
+%       {Languages}{}
+%       \resumeItemListStart
+%         \resumeItem{\textbf{Romanian}: Native}
+%         \resumeItem{\textbf{English}: TOEFL – iBT, Oct. 2017: \textit{Listening - C2, Reading - C2, Speaking - C1, Writing - C2} }
+%         \resumeItem{\textbf{French}: High School Level}
+        
+%       \resumeItemListEnd
+        
+
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

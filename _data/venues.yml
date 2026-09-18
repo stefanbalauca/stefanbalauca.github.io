@@ -32,3 +32,13 @@ ICCS:
   url: https://www.iccs-meeting.org/
   color: "#8a2be2"
 
+KES:
+  url: https://kesinternational.org/
+  color: "#00695c"
+
+arXiv:
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+CYSC:
+  color: "#795548"
