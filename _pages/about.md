@@ -10,8 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>CS PhD @ <a href='https://info.uaic.ro/'>FII, UAIC</a></p>
+    <p>Assistant Lecturer @ <a href='https://info.uaic.ro/'>FII, UAIC</a></p>
     <p>Researcher @ <a href='https://www.freeya-mind-campus.ro/'>FreeYa Mind</a></p>
-    <p>Incoming Assistant Lecturer @ <a href='https://www.uaic.ro/'>UAIC</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,7 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm a Computer Science PhD student at Alexandru Ioan Cuza University of Iași, Romania, where I study **robust quantum machine learning**. I am also a researcher at **FreeYaMind Campus**, working on near-term applications of quantum computing and machine learning. From October 2026, I will join Alexandru Ioan Cuza University as an Assistant Lecturer in Quantum Computing, Machine Learning, and Numerical Calculus.
+<link rel="stylesheet" href="{{ '/assets/css/publication-grid.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/theme-colors.css' | relative_url }}">
+
+Hi! I'm a Computer Science PhD student and Assistant Lecturer at Alexandru Ioan Cuza University of Iași, Romania, where I study **robust quantum machine learning** and teach Quantum Computing, Machine Learning, and Numerical Calculus. I am also a researcher at **FreeYaMind Campus**, working on near-term applications of quantum computing and machine learning.
 
 My research spans hybrid quantum-classical models, quantum natural language processing, and the robustness and safety of machine-learning systems. Recent work includes training quantum language models on real quantum hardware, adversarial training for large language models, and certified training of neural networks.
 

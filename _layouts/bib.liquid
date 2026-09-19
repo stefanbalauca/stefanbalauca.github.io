@@ -1,8 +1,8 @@
 ---
 ---
-<div class="row">
+<div class="row publication-entry">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-4 abbr publication-preview-column">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -62,7 +62,10 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div
+    id="{{ entry.key }}"
+    class="publication-details-column {% if site.enable_publication_thumbnails %}col-sm-6{% else %}col-sm-10{% endif %}"
+  >
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -377,7 +380,7 @@
 
   <!-- Visual links retained from the pre-v1 site; the surrounding entry stays on the v1.2 layout. -->
   <div
-    class="col-sm-2 pub-icons"
+    class="col-sm-2 pub-icons publication-actions-column"
     style="display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 0.75rem 0.5rem; margin-top: 0.5rem;"
   >
     {% if entry.pdf %}

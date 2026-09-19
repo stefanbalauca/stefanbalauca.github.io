@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Ștefan-Răzvan Bălăucă",
-    "email": "stefann.balauca@gmail.com",
+    "email": "stefan-razvan.balauca@info.uaic.ro",
     "website": "<a href='https://stefanbalauca.github.io'>stefanbalauca.github.io</a>",
     "github": "<a href='https://github.com/stefanrzv2000'>stefanrzv2000</a>",
-    "linkedin": "<a href='https://www.linkedin.com/in/stefan-balauca-43a69a252/'>stefan-balauca</a>",
-    "scholar": "<a href='https://scholar.google.com/citations?user=C-kUYncAAAAJ&hl=en&oi=ao'>Google Scholar</a>"
+    "linkedin": "https://www.linkedin.com/in/stefan-balauca-43a69a252/",
+    "scholar": "https://scholar.google.com/citations?user=C-kUYncAAAAJ&hl=en&oi=ao"
   },
   "education": [
     {
@@ -72,11 +72,11 @@
   ],
   "work": [
     {
-      "position": "Incoming Assistant Lecturer — Quantum Computing, Machine Learning and Numerical Calculus",
+      "position": "Assistant Lecturer — Quantum Computing, Machine Learning and Numerical Calculus",
       "name": "Alexandru Ioan Cuza University",
-      "url": "https://www.uaic.ro/",
+      "url": "https://info.uaic.ro/",
       "startDate": "2026-10",
-      "endDate": "Incoming",
+      "endDate": "Present",
       "location": "Iași, Romania",
       "summary": "Teaching laboratory classes, designing and evaluating assignments and projects, and supervising BSc and MSc theses."
     },
@@ -155,7 +155,9 @@
       "authors": "A.-G. Panca, M. Cioratanu, S. Balauca and A. Iftene",
       "publisher": "30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES 2026)",
       "releaseDate": "2026",
-      "summary": "Dublin, Ireland."
+      "url": "",
+      "pdf": "panca2026skin.pdf",
+      "summary": "KES 2026, Dublin, Ireland."
     },
     {
       "name": "Practical Hybrid Quantum Language Models with Observable Readout on Real Hardware",
@@ -171,7 +173,7 @@
       "url": "https://arxiv.org/abs/2505.16947",
       "publisher": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
       "releaseDate": "2025",
-      "summary": "NeurIPS 2025."
+      "summary": "NeurIPS 2025, San Diego, USA."
     },
     {
       "name": "Understanding Museum Exhibits using Vision-Language Reasoning",
@@ -179,7 +181,7 @@
       "url": "https://doi.org/10.1109/ICCV51701.2025.00215",
       "publisher": "IEEE/CVF International Conference on Computer Vision (ICCV 2025)",
       "releaseDate": "2025",
-      "summary": "Hawaii, USA."
+      "summary": "ICCV 2025, Hawaii, USA."
     },
     {
       "name": "CTBench: A Library and Benchmark for Certified Training",
@@ -203,7 +205,7 @@
       "url": "https://doi.org/10.1007/978-3-031-08760-8_16",
       "publisher": "22nd International Conference on Computational Science (ICCS 2022)",
       "releaseDate": "2022",
-      "summary": "Oral presentation and session co-chair; London, UK."
+      "summary": "ICCS 2022, London, UK; Oral presentation and session co-chair."
     },
     {
       "name": "Finite Difference Method for Modeling the Dielectric Properties of Ceramic Composites",
@@ -211,7 +213,7 @@
       "url": "https://docs.google.com/presentation/d/1ar2SsrwT4a7_rGUB7rXAeq9pXUVu2X-V/edit?usp=share_link",
       "publisher": "13th Conference for Young Scientists in Ceramics (CYSC 2019)",
       "releaseDate": "2019",
-      "summary": "Oral presentation; Novi Sad, Serbia."
+      "summary": "CYSC 2019, Novi Sad, Serbia; Oral presentation."
     }
   ],
   "projects": [
@@ -220,7 +222,7 @@
       "startDate": "2022-10",
       "endDate": "2023-02",
       "summary": "Convolutional, recurrent and attention networks for identifying the image that best describes an ambiguous word.",
-      "highlights": ["PyTorch", "NLTK", "WordNet"]
+      "highlights": ["PyTorch, NLTK, WordNet"]
     },
     {
       "name": "Participation at CMMRS Research Summer School",
@@ -235,15 +237,15 @@
       "startDate": "2020-10",
       "endDate": "2021-01",
       "summary": "Extracted a story's main characters and linked them to explicit and implicit actions.",
-      "highlights": ["Winner of the Amazon Learn & Earn competition", "NLTK", "spaCy"]
+      "highlights": ["Winner of the Amazon Learn & Earn competition", "NLTK, spaCy"]
     },
     {
       "name": "Q-learning for Gym's CarRacing Environment",
       "url": "https://github.com/stefanrzv2000/gym",
       "startDate": "2020-10",
       "endDate": "2021-01",
-      "summary": "Built a Q-learning agent that achieved scores of 850–900/1000.",
-      "highlights": ["Keras", "TensorFlow"]
+      "summary": "Built a Q-learning agent that achieved scores of 850--900/1000.",
+      "highlights": ["Keras, TensorFlow"]
     }
   ],
   "awards": [

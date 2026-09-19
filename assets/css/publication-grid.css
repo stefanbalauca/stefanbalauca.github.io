@@ -1,0 +1,43 @@
+/* Keep publication previews, details, and actions aligned on wider screens. */
+.post article > h2 > a[href$="/news/"],
+.post article > h2 > a[href$="/publications/"] {
+  text-transform: capitalize;
+}
+
+@media (min-width: 576px) {
+  .publications .publication-entry {
+    flex-wrap: nowrap;
+  }
+
+  .publications .publication-entry .publication-preview-column {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .publications .publication-entry .publication-details-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0;
+  }
+
+  .publications .publication-entry .publication-actions-column {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .publications .publication-entry .publication-preview-column figure {
+    text-align: center;
+  }
+
+  .publications .publication-entry .publication-preview-column .preview {
+    display: block;
+    width: auto !important;
+    max-width: 100%;
+    max-height: 220px;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: contain;
+  }
+}
