@@ -1,0 +1,171 @@
+/* 1. Base list cleanups */
+.cv ul.list-group,
+.cv li.list-group-item {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* 2. Convert row into a strict 2-column Grid */
+.cv .list-group-item > .row {
+  display: grid !important;
+  grid-template-columns: 120px 1fr !important; /* Fixed left width, right fills rest */
+  column-gap: 1.5rem !important;                /* Exact space between badges and text */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  align-items: start !important;                /* Align top baselines */
+}
+
+/* 3. Strip Bootstrap's column width calculations so Grid handles it */
+.cv .list-group-item > .row > [class*="col-"] {
+  width: auto !important;
+  max-width: none !important;
+  flex: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 4. Left Column: centers badge and location along the column axis */
+.cv .list-group-item > .row > [class*="col-"]:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+/* al-folio table reset */
+.cv .list-group-item .table-cv,
+.cv .list-group-item .table-cv tbody,
+.cv .list-group-item .table-cv tr,
+.cv .list-group-item .table-cv td {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* 5. Date Badge: perfectly sized and centered */
+.cv .list-group-item .badge {
+  display: inline-block !important;
+  width: 100% !important;
+  max-width: 110px !important;
+  box-sizing: border-box !important;
+  margin: 1.00rem 0 0 0 !important; /* Slight tweak to align with first text baseline */
+  padding: 0.4rem 0.2rem !important;
+  font-size: 0.72rem !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  white-space: normal !important;
+}
+
+/* 6. Location Label: neat text underneath */
+.cv .date-column .location {
+  display: block !important;
+  width: 100% !important;
+  max-width: 110px !important;
+  margin: 0.35rem auto 0 auto !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  white-space: normal !important;
+}
+
+.cv .date-column .iconlocation {
+  margin-right: 0.2rem !important;
+  font-size: 0.85em !important;
+}
+
+/* 7. Right Column: reset top heading margin so it matches badge start */
+.cv .list-group-item > .row > [class*="col-"]:last-child > :first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* 8. Mobile Responsiveness */
+@media (max-width: 575.98px) {
+  .cv .list-group-item > .row {
+    grid-template-columns: 1fr !important; /* Stack vertically on phones */
+    row-gap: 0.5rem !important;
+  }
+
+  .cv .list-group-item > .row > [class*="col-"]:first-child {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .cv .list-group-item .badge,
+  .cv .date-column .location {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+}
+
+/* Keep the CV timeline labels aligned and allow longer locations to wrap. 
+.cv ul.list-group,
+.cv li.list-group-item {
+  list-style: none;
+}
+
+.cv ul.list-group {
+  padding-left: 1rem;
+}
+
+.cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 .table-cv {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 .table-cv td {
+  text-align: center;
+}
+
+.cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 .badge {
+  width: auto;
+  min-width: 75px !important;
+  line-height: 1.2;
+  text-align: center;
+  white-space: normal;
+}
+
+.cv .date-column .location {
+  margin: 0.4rem 0 0;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+  text-align: center;
+  white-space: normal;
+}
+
+.cv .date-column .iconlocation {
+  margin-right: 0.15rem;
+}
+
+@media (max-width: 575.98px) {
+  .cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2,
+  .cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 + [class*="col-"] {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 + [class*="col-"] {
+    margin-top: 0 !important;
+  }
+
+  .cv .list-group-item > .row > .col-xs-2.col-sm-2.col-md-2 .table-cv {
+    width: auto;
+    table-layout: auto;
+  }
+
+  .cv .date-column .location {
+    text-align: center;
+  }
+}
+*/
