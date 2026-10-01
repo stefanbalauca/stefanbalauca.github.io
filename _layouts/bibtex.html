@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{% assign entry = page.entry %}
+<link rel="stylesheet" href="{{ '/assets/css/theme-colors.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/publication-detail.css' | relative_url }}">
+
+<article class="post publication-detail">
+  <p class="publication-back"><a href="{{ '/publications/' | relative_url }}">← All publications</a></p>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ entry.title }}</h1>
+    <div class="author">
+      {% for author in entry.author_array %}
+        {{ author.first }}
+        {{ author.last -}}
+        {%- unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+    <p class="periodical">
+      {% if entry.booktitle %}
+        <em>{{ entry.booktitle }}</em>,
+      {% elsif entry.journal %}
+        <em>{{ entry.journal }}</em>,
+      {% elsif entry.archiveprefix == 'arXiv' %}
+        <em>arXiv preprint arXiv:{{ entry.eprint }}</em>,
+      {% elsif entry.howpublished %}
+        <em>{{ entry.howpublished }}</em>,
+      {% endif %}
+      {{ entry.year }}
+    </p>
+    {% if entry.additional_info %}{{ entry.additional_info | markdownify }}{% endif %}
+  </header>
+
+  <nav class="links publication-resource-links" aria-label="Publication resources">
+    {% assign resources = 'pdf,code,slides,poster,video,website,url,html,supp' | split: ',' %}
+    {% assign labels = 'Paper,Code,Slides,Poster,Video,Website,Publication page,HTML,Supplement' | split: ',' %}
+    {% assign icons = 'icon-pdf,icon-github-new,icon-slides,icon-poster,icon-video,website,website,website,icon-pdf' | split: ',' %}
+    {% for resource in resources %}
+      {% assign resource_url = entry[resource] %}
+      {% if resource_url %}
+        {% if resource == 'doi' %}
+          {% assign resource_url = resource_url | prepend: 'https://doi.org/' %}
+        {% elsif resource == 'arxiv' %}
+          {% assign resource_url = resource_url | prepend: 'https://arxiv.org/abs/' %}
+        {% elsif resource == 'pdf' or resource == 'slides' or resource == 'poster' or resource == 'supp' %}
+          {% unless resource_url contains '://' %}
+            {% assign resource_url = resource_url | prepend: '/assets/pdf/' | relative_url %}
+          {% endunless %}
+        {% elsif resource == 'html' %}
+          {% unless resource_url contains '://' %}
+            {% assign resource_url = resource_url | prepend: '/assets/html/' | relative_url %}
+          {% endunless %}
+        {% endif %}
+        {% assign icon_path = icons[forloop.index0] | prepend: '/assets/icons/' | append: '.svg' %}
+        <a class="pub-icon" href="{{ resource_url | escape }}">
+          <img src="{{ icon_path | relative_url }}" alt="" width="34" height="34">
+          <span>{{ labels[forloop.index0] }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+  {% if entry.preview %}
+    <div class="publication-preview">
+      {% if entry.preview contains '://' %}
+        {% assign preview_path = entry.preview %}
+      {% else %}
+        {% assign preview_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+      {% endif %}
+      {% assign preview_extension = entry.preview | split: '.' | last | split: '?' | first | downcase %}
+      {% assign video_extensions = 'mp4,webm,ogg,mov' | split: ',' %}
+      {% if video_extensions contains preview_extension %}
+        {% include video.liquid path=preview_path class="publication-preview-image rounded" controls=true %}
+      {% else %}
+        {% include figure.liquid path=preview_path class="publication-preview-image rounded" alt=entry.title loading="eager" sizes="(max-width: 640px) 95vw, 640px" %}
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if entry.abstract %}
+    <h2>Abstract</h2>
+    <p>{{ entry.abstract }}</p>
+  {% endif %}
+
+  {% assign metadata_fields = 'series,publisher,volume,number,pages,isbn,issn,eprint,primaryclass' | split: ',' %}
+  {% assign metadata_labels = 'Series,Publisher,Volume,Issue,Pages,ISBN,ISSN,arXiv,Subject class' | split: ',' %}
+  {% capture publication_metadata %}
+  {% for field in metadata_fields %}
+    {% if entry[field] %}
+      <dt>{{ metadata_labels[forloop.index0] }}</dt>
+      <dd>{{ entry[field] }}</dd>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+  {% assign publication_metadata = publication_metadata | strip %}
+  {% if publication_metadata != '' %}
+    <section aria-labelledby="publication-metadata-title">
+      <h2 id="publication-metadata-title">Publication details</h2>
+      <dl class="publication-metadata">{{ publication_metadata }}</dl>
+    </section>
+  {% endif %}
+
+  <h2>Citation</h2>
+  <p>{{ page.reference }}</p>
+
+  <details open>
+    <summary>BibTeX</summary>
+    {% highlight bibtex %}
+    {{- entry.bibtex | hideCustomBibtex -}}
+    {% endhighlight %}
+  </details>
+</article>

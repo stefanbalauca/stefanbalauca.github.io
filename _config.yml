@@ -98,7 +98,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -142,10 +142,10 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -188,15 +188,9 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: true
   news:
     defaults:
       layout: post
-    output: true
-  projects:
-    output: true
-  teachings:
     output: true
 
 # -----------------------------------------------------------------------------
@@ -233,13 +227,15 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - gems/
   - migrations/
   - vendor
+  - test/
+  - my_cv.tex
+  - requirements.txt
 keep_files:
   - CNAME
   - .nojekyll
@@ -329,16 +325,7 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-    permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+    enabled: []
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -362,8 +349,10 @@ scholar:
   replace_strings: true
   join_strings: true
 
-  details_dir: bibliography
-  details_link: Details
+  details_dir: publications
+  details_layout: bibtex.html
+  details_permalink: /:details_dir/:key/
+  details_link: false # Titles link to Scholar's details URL in the existing card template.
 
   query: "@*"
   group_by: year
@@ -392,7 +381,6 @@ filtered_bibtex_keywords:
     blog,
     code,
     dimensions,
-    eprint,
     google_scholar_id,
     hal,
     html,

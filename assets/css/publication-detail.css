@@ -1,0 +1,84 @@
+/* Styles scoped to individual publications; the overview uses its existing cards. */
+.publication-detail .publication-back {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.publication-detail .post-header {
+  margin-bottom: 1.5rem;
+}
+
+.publication-detail .post-title {
+  margin-bottom: 1rem;
+}
+
+.publication-detail .author {
+  margin-bottom: 0.65rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.publication-detail .periodical {
+  margin-bottom: 0.75rem;
+}
+
+.publication-detail .publication-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.publication-detail .pub-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  color: var(--global-text-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.publication-detail .pub-icon:hover,
+.publication-detail .pub-icon:focus-visible {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.publication-detail .publication-preview {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+.publication-detail .publication-preview-image {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.publication-detail h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.publication-detail .publication-metadata {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.5rem 1.5rem;
+}
+
+.publication-detail .publication-metadata dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.publication-detail details > summary {
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
